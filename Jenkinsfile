@@ -6,17 +6,6 @@ pipeline {
     stages {
 
 
-        stage('Checkout Code') {
-
-            steps {
-
-                git 'https://github.com/adwaitmoroney-commits/java-cicd-demo.git'
-
-            }
-
-        }
-
-
         stage('Build Application') {
 
             steps {
@@ -38,7 +27,6 @@ pipeline {
 
         }
 
-
     }
 
 
@@ -49,7 +37,6 @@ pipeline {
             echo 'Build Completed Successfully'
 
         }
-
 
         failure {
 
